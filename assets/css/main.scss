@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.btn {
+  margin-top: 2rem;
+  width: 100%;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  border-radius: .5rem;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: cornflowerblue;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+
+  &:hover {
+    background: darkblue;
+  }
+}
+
+@import "header";
+@import "catalog";
+@import "modal";
